@@ -1,0 +1,185 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#f4f9ff;
+  color:#222;
+  transition:0.4s;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 50px;
+  background:white;
+  position:sticky;
+  top:0;
+  box-shadow:0 4px 15px rgba(0,0,0,0.05);
+}
+
+nav h1{
+  color:#2563eb;
+}
+
+#darkBtn{
+  border:none;
+  padding:10px 15px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.hero{
+  height:90vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+  background:
+  linear-gradient(
+  135deg,
+  #dbeafe,
+  #eff6ff
+  );
+}
+
+.hero h2{
+  font-size:3rem;
+  margin-bottom:20px;
+}
+
+.hero p{
+  font-size:1.1rem;
+  margin-bottom:20px;
+}
+
+.hero button{
+  padding:15px 35px;
+  border:none;
+  background:#2563eb;
+  color:white;
+  border-radius:30px;
+  cursor:pointer;
+}
+
+.dashboard{
+  padding:80px 50px;
+}
+
+.dashboard h2{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.ai-section{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.ai-section input{
+  width:300px;
+  padding:15px;
+  border-radius:10px;
+  border:1px solid #ddd;
+}
+
+.ai-section button{
+  padding:15px 25px;
+  border:none;
+  background:#2563eb;
+  color:white;
+  border-radius:10px;
+  cursor:pointer;
+  margin-left:10px;
+}
+
+#result{
+  margin-top:30px;
+  font-size:1.1rem;
+}
+
+.exercise{
+  padding:80px 50px;
+}
+
+.exercise-grid{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.exercise-card{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+footer{
+  background:#2563eb;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+/* DARK MODE */
+
+.dark{
+  background:#0f172a;
+  color:white;
+}
+
+.dark nav,
+.dark .card,
+.dark .exercise-card{
+  background:#1e293b;
+  color:white;
+}
+
+.dark input{
+  background:#1e293b;
+  color:white;
+}
+
+@media(max-width:768px){
+
+  nav{
+    padding:20px;
+  }
+
+  .hero h2{
+    font-size:2rem;
+  }
+
+  .ai-section input{
+    width:100%;
+    margin-bottom:20px;
+  }
+
+}
