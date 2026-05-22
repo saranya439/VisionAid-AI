@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VisionAid AI</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h1>👁 VisionAid AI</h1>
+
+  <div class="nav-right">
+    <button id="darkBtn">🌙</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+  <div class="hero-text">
+    <h2>Protect Your Eyes In The AI Era</h2>
+
+    <p>
+      Smart screen-health assistant for students and professionals.
+    </p>
+
+    <button onclick="scrollToDashboard()">
+      Get Started
+    </button>
+  </div>
+
+</section>
+
+<!-- DASHBOARD -->
+<section class="dashboard" id="dashboard">
+
+  <h2>Your Eye Health Dashboard</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Screen Time</h3>
+      <p id="screenTime">0 mins</p>
+    </div>
+
+    <div class="card">
+      <h3>Blink Reminder</h3>
+      <p>Every 20 mins</p>
+    </div>
+
+    <div class="card">
+      <h3>Health Score</h3>
+      <p id="healthScore">100%</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- AI ASSISTANT -->
+<section class="ai-section">
+
+  <h2>AI Eye Care Assistant</h2>
+
+  <input
+    type="text"
+    id="userInput"
+    placeholder="Describe your eye problem..."
+  >
+
+  <button onclick="getAdvice()">
+    Get AI Advice
+  </button>
+
+  <div id="result"></div>
+
+</section>
+
+<!-- EYE EXERCISES -->
+<section class="exercise">
+
+  <h2>Eye Relaxation Exercises</h2>
+
+  <div class="exercise-grid">
+
+    <div class="exercise-card">
+      👀 Blink Frequently
+    </div>
+
+    <div class="exercise-card">
+      🌳 Look Far Away
+    </div>
+
+    <div class="exercise-card">
+      💧 Stay Hydrated
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 VisionAid AI</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
